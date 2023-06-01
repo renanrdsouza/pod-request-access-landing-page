@@ -18,6 +18,17 @@ module.exports = {
       },
       lineHeight: {
         'title-line-height': '3.875rem'
+      },
+      maxWidth: {
+        'spotify-logo': '3.5rem',
+        'apple-logo': '2.813rem',
+        'google-logo': '4.563rem',
+        'pocket-logo': '4.813rem'
+      },
+      maxHeight: {
+        'spotify-apple-logo': '1.063rem',
+        'google-logo': '0.688rem',
+        'pocket-logo': '0.938rem'
       }
     },
   },

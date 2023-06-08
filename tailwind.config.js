@@ -10,6 +10,7 @@ module.exports = {
         'black': '#121725',
         'dark-blue': '#2C344B',
         'light-green': '#54E6AF',
+        'light-green-hover': '#B3FFE2',
         'light-gray': '#C2CBE5',
         'gray': '#5A668A'
       },
@@ -32,7 +33,9 @@ module.exports = {
         'md-apple-logo': '4.875rem',
         'md-google-logo': '7.813rem',
         'md-pocket-logo': '8.063rem',
-        'md-main-container': '39.688rem'
+        'md-main-container': '39.688rem',
+        'md-submit-button': '10.125rem',
+        'buttons-container': '26.688rem',
       },
       maxHeight: {
         'sm-spotify-apple-logo': '1.063rem',
@@ -41,6 +44,12 @@ module.exports = {
         'md-spotify-apple-logo': '1.813rem',
         'md-google-logo': '1.125rem',
         'md-pocket-logo': '1.625rem'
+      },
+      translate: {
+        '17': '4.25rem'
+      },
+      screens: {
+        'desktop': '1440px'
       }
     },
   },

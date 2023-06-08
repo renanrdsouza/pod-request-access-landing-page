@@ -15,12 +15,13 @@
   
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
-<body class="flex flex-col font-chivo bg-black min-h-screen w-full">
-  <img src="../assets/tablet/image-host.jpg" alt="Host image" class="invisible md:visible md:fixed md:right-0 absolute -z-10 mix-blend-normal ">
+<body class="flex flex-col font-chivo bg-black min-h-screen w-full max-w-screen-desktop">
   <header class="w-screen pt-16 pb-16">
     <div class="image-container flex justify-center md:justify-start md:ps-10">
       <img src="../assets/desktop/logo.svg" alt="">
     </div>
+    <img src="../assets/tablet/image-host.jpg" alt="Tablet host image" class="invisible md:visible desktop:invisible md:fixed md:right-0 absolute top-0">
+    <img src="../assets/desktop/image-host.jpg" alt="Desktop host image" class="invisible desktop:visible right-0 absolute">
   </header>
 
   <main class="md:justify-self-end md:bottom-0">
@@ -34,21 +35,21 @@
         Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
         Apple Podcasts, Google Podcasts, Pocket Casts and more!
       </p>
-      <div class="logos flex flex-row justify-center gap-x-3.5 order-3 md:order-4 md:mt-4 md:justify-start">
+      <div class="logos flex flex-row justify-center gap-x-3.5 order-3 md:order-4 md:mt-4 md:justify-start desktop:mt-0">
         <img src="../assets/desktop/spotify.svg" alt="Spotify logo" class="max-w-sm-spotify-logo max-h-sm-spotify-apple-logo md:max-w-md-spotify-logo md:max-h-md-spotify-apple-logo opacity-50">
         <img src="../assets/desktop/apple-podcast.svg" alt="Apple podcast logo" class="max-w-sm-apple-logo max-h-sm-spotify-apple-logo md:max-w-md-apple-logo md:max-h-md-spotify-apple-logo opacity-50">
         <img src="../assets/desktop/google-podcasts.svg" alt="Google podcasts logo" class="max-w-sm-google-logo max-h-sm-google-logo md:max-w-md-google-logo md:max-h-md-google-logo opacity-50">
         <img src="../assets/desktop/pocket-casts.svg" alt="Pocket-casts logo" class="max-w-sm-pocket-logo max-h-sm-pocket-logo md:max-w-md-pocket-logo md:max-h-md-pocket-logo opacity-50">
       </div>
-      <div class="w-screen px-10 md:w-auto order-4 md:order-3 md:justify-start md:px-0 md:mb-1">
-        <input type="text" placeholder="Email address" class="block bg-gray/50 placeholder:text-light-gray placeholder:font-bold placeholder:ps-6 rounded-3xl mt-14 p-3 w-full">
-        <button type="submit" class=" font-extrabold text-black bg-light-green rounded-3xl mt-4 p-3 w-full">Request access</button>
+      <div class="flex flex-col w-screen px-10 md:w-auto order-4 md:order-3 md:justify-start md:px-0 md:mb-1 max-w-buttons-container">
+        <input type="text" placeholder="Email address" class="block bg-gray/50 text-light-gray placeholder:text-light-gray placeholder:font-bold placeholder:ps-6 rounded-full mt-14 p-4 w-full">
+        <button type="submit" class="font-extrabold text-black bg-light-green rounded-full mt-4 p-4 hover:bg-light-green-hover md:p-3 w-full md:max-w-md-submit-button md:self-end md:-translate-x-1 md:-translate-y-17">Request access</button>
       </div>
     </div>
   </main>
 
-  <footer class="invisible md:visible mt-auto">
-    <img src="../assets/desktop/bg-pattern-dots.svg" alt="Green dots" class="md:px-8">
+  <footer class="flex invisible md:visible md:mt-auto desktop:justify-end desktop:mt-3">
+    <img src="../assets/desktop/bg-pattern-dots.svg" alt="Green dots" class="md:px-8 desktop:z-10">
   </footer>
 </body>
 </html>

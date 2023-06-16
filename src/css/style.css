@@ -538,14 +538,6 @@ video {
   top: 0px;
 }
 
-.-z-10 {
-  z-index: -10;
-}
-
-.z-10 {
-  z-index: 10;
-}
-
 .order-1 {
   order: 1;
 }
@@ -568,14 +560,6 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mt-auto {
-  margin-top: auto;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .block {
@@ -610,8 +594,8 @@ video {
   width: 100vw;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
+.max-w-buttons-container {
+  max-width: 26.688rem;
 }
 
 .max-w-sm-apple-logo {
@@ -630,8 +614,8 @@ video {
   max-width: 3.5rem;
 }
 
-.max-w-buttons-container {
-  max-width: 26.688rem;
+.max-w-max-width-desktop {
+  max-width: 90rem;
 }
 
 .max-w-screen-desktop {
@@ -646,8 +630,8 @@ video {
   flex-direction: column;
 }
 
-.justify-end {
-  justify-content: flex-end;
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -662,6 +646,14 @@ video {
 .gap-x-3\.5 {
   -moz-column-gap: 0.875rem;
        column-gap: 0.875rem;
+}
+
+.self-start {
+  align-self: flex-start;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .rounded-full {
@@ -707,8 +699,8 @@ video {
   text-align: center;
 }
 
-.align-bottom {
-  vertical-align: bottom;
+.align-middle {
+  vertical-align: middle;
 }
 
 .font-chivo {
@@ -797,12 +789,6 @@ video {
   background-color: rgb(179 255 226 / var(--tw-bg-opacity));
 }
 
-@media not all and (min-width: 1440px) {
-  .max-desktop\:mr-auto {
-    margin-right: auto;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:visible {
     visibility: visible;
@@ -884,8 +870,8 @@ video {
     max-width: 10.125rem;
   }
 
-  .md\:-translate-x-1 {
-    --tw-translate-x: -0.25rem;
+  .md\:-translate-x-50 {
+    --tw-translate-x: -11.563rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -897,6 +883,15 @@ video {
   .md\:translate-y-16 {
     --tw-translate-y: 4rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:-translate-x-1 {
+    --tw-translate-x: -0.25rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .md\:items-start {
+    align-items: flex-start;
   }
 
   .md\:justify-start {
@@ -961,14 +956,6 @@ video {
     visibility: hidden;
   }
 
-  .desktop\:right-0 {
-    right: 0px;
-  }
-
-  .desktop\:z-0 {
-    z-index: 0;
-  }
-
   .desktop\:z-10 {
     z-index: 10;
   }
@@ -977,31 +964,36 @@ video {
     margin-top: 0px;
   }
 
-  .desktop\:mr-auto {
-    margin-right: auto;
-  }
-
-  .desktop\:mt-1 {
-    margin-top: 0.25rem;
-  }
-
-  .desktop\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
   .desktop\:mt-3 {
     margin-top: 0.75rem;
   }
 
-  .desktop\:max-w-screen-desktop {
-    max-width: 1440px;
+  .desktop\:ms-80 {
+    -webkit-margin-start: 20rem;
+            margin-inline-start: 20rem;
+  }
+
+  .desktop\:ms-4 {
+    -webkit-margin-start: 1rem;
+            margin-inline-start: 1rem;
+  }
+
+  .desktop\:ms-40 {
+    -webkit-margin-start: 10rem;
+            margin-inline-start: 10rem;
+  }
+
+  .desktop\:ms-36 {
+    -webkit-margin-start: 9rem;
+            margin-inline-start: 9rem;
+  }
+
+  .desktop\:ms-44 {
+    -webkit-margin-start: 11rem;
+            margin-inline-start: 11rem;
   }
 
   .desktop\:justify-end {
     justify-content: flex-end;
-  }
-
-  .desktop\:mix-blend-normal {
-    mix-blend-mode: normal;
   }
 }

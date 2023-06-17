@@ -36,7 +36,8 @@ module.exports = {
         'md-main-container': '39.688rem',
         'md-submit-button': '10.125rem',
         'buttons-container': '26.688rem',
-        'max-width-desktop': '90rem'
+        'tablet': '39.688rem',
+        'desktop': '90rem'
       },
       maxHeight: {
         'sm-spotify-apple-logo': '1.063rem',
@@ -48,7 +49,8 @@ module.exports = {
       },
       translate: {
         '17': '4.25rem',
-        '50': '11.563rem'
+        '50': '11.563rem',
+        '120': '32rem'
       },
       screens: {
         'desktop': '1440px'

@@ -12,26 +12,27 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100&display=swap" rel="stylesheet">
+  <script src="./validation.js" defer></script>
   
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
-<body class="flex flex-col font-chivo bg-black min-h-screen w-full max-w-screen-desktop">
-  <header class="w-screen pt-16 pb-16">
-    <div class="image-container flex justify-center md:justify-start md:ps-10 desktop:ms-40">
+<body class="flex flex-col font-chivo bg-black min-h-screen w-full max-w-screen-desktop m-auto">
+  <header class="w-screen pt-16 pb-16 max-w-screen-desktop">
+    <div class="self-center image-container flex justify-center md:justify-start md:ps-10 desktop:ms-36 desktop:translate-y-6 z-40">
       <img src="../assets/desktop/logo.svg" alt="">
     </div>
-    <img src="../assets/tablet/image-host.jpg" alt="Tablet host image" class="invisible md:visible desktop:invisible md:fixed md:right-0 absolute top-0">
-    <img src="../assets/desktop/image-host.jpg" alt="Desktop host image" class="invisible desktop:visible right-0 absolute">
+    <img src="../assets/tablet/image-host.jpg" alt="Tablet host image" class="invisible md:visible desktop:invisible  md:right-0 absolute top-0">
+    <img src="../assets/desktop/image-host.jpg" alt="Desktop host image" class="invisible desktop:visible absolute items-end translate-x-120">
   </header>
 
-  <main class="md:justify-self-end md:bottom-0">
-    <div class="flex flex-col md:max-w-main-container md:bg-black md:px-8 md:pt-16 md:max-w-2xl md:translate-y-16 desktop:ms-40">
-      <h1 class="text-2xl md:text-5.5xl uppercase text-white text-center md:text-left order-1">
+  <main class="md:justify-self-end md:bottom-0 md:ms-10 desktop:ms-6">
+    <div class="flex flex-col md:max-w-main-container md:bg-black md:pt-16 md:max-w-2xl md:translate-y-16 desktop:ms-40">
+      <h1 class="text-2xl md:text-5.5xl uppercase text-white text-center md:text-left order-1 md:mt-5">
         <span class="text-light-green leading-title-line-height">
           Publish your podcasts
         </span> everywhere.
       </h1>
-      <p class="text-lg leading-7 text-light-gray p-10 md:p-0 md:max-w-md text-center md:text-left order-2">
+      <p class="text-lg leading-7 text-light-gray p-10 md:mt-11 md:p-0 md:max-w-md text-center md:text-left order-2">
         Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
         Apple Podcasts, Google Podcasts, Pocket Casts and more!
       </p>
@@ -41,9 +42,10 @@
         <img src="../assets/desktop/google-podcasts.svg" alt="Google podcasts logo" class="max-w-sm-google-logo max-h-sm-google-logo md:max-w-md-google-logo md:max-h-md-google-logo opacity-50">
         <img src="../assets/desktop/pocket-casts.svg" alt="Pocket-casts logo" class="max-w-sm-pocket-logo max-h-sm-pocket-logo md:max-w-md-pocket-logo md:max-h-md-pocket-logo opacity-50">
       </div>
-      <div class="flex flex-col w-screen px-10 md:w-auto order-4 md:order-3 md:justify-start md:px-0 md:mb-1">
-        <input type="text" placeholder="Email address" class="block bg-gray/50 text-light-gray placeholder:text-light-gray placeholder:font-bold placeholder:ps-6 rounded-full mt-14 p-4 w-full">
-        <button type="submit" class="font-extrabold text-black bg-light-green rounded-full mt-4 p-4 hover:bg-light-green-hover md:p-3 w-full md:max-w-md-submit-button md:self-end md:-translate-x-1 md:-translate-y-17">Request access</button>
+      <div class="flex flex-col w-screen px-10 md:max-w-buttons-container order-4 md:order-3 md:justify-start md:px-0 md:mb-1">
+        <input type="text" id="email" placeholder="Email address" class="block bg-gray/50 text-light-gray placeholder:text-light-gray placeholder:font-bold placeholder:ps-5 rounded-full mt-14 p-4 w-full">
+        <button type="submit" class="font-extrabold text-black bg-light-green rounded-full mt-4 p-4 hover:bg-light-green-hover md:p-3 w-full md:max-w-md-submit-button md:self-end md:-translate-x-1 md:-translate-y-17" onclick="validateEmail(this.parentNode)">Request access</button>
+        <span id="errorMessage" class="invisible text-red-500 font-bold absolute desktop:translate-x-9 desktop:translate-y-28">Ops! Please check your email</span>
       </div>
     </div>
   </main>

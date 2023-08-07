@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'tablet': "url('../assets/tablet/image-host.jpg')"
+        'tablet': "url('/image-host-tablet.jpg')"
       },
       colors: {
         'black': '#121725',

@@ -988,6 +988,10 @@ video {
     z-index: 10;
   }
 
+  .desktop\:-mt-7 {
+    margin-top: -1.75rem;
+  }
+
   .desktop\:ms-36 {
     -webkit-margin-start: 9rem;
             margin-inline-start: 9rem;
@@ -1005,38 +1009,6 @@ video {
 
   .desktop\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .desktop\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
-  .desktop\:mt-1 {
-    margin-top: 0.25rem;
-  }
-
-  .desktop\:mt-0 {
-    margin-top: 0px;
-  }
-
-  .desktop\:-mt-0 {
-    margin-top: -0px;
-  }
-
-  .desktop\:-mt-2 {
-    margin-top: -0.5rem;
-  }
-
-  .desktop\:-mt-5 {
-    margin-top: -1.25rem;
-  }
-
-  .desktop\:-mt-6 {
-    margin-top: -1.5rem;
-  }
-
-  .desktop\:-mt-7 {
-    margin-top: -1.75rem;
   }
 
   .desktop\:translate-x-9 {
